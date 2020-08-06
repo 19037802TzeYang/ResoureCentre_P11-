@@ -14,6 +14,15 @@ public class Camcorder extends Item{
 	public String toString(){
 		String output = "";
 		// Write your codes here
+	       
+	        Object camcorderList;
+	        output += String.format("%-10s %-30s %-10s %-10s %-20d\n", camcorderList.get(i).getAssetTag(),
+	                camcorderList.get(i).getDescription(),
+	                ResourceCentre.showAvailability(camcorderList.get(i).getIsAvailable()),
+	                camcorderList.get(i).getDueDate(),camcorderList.get(i).getOpticalZoom());
+	        return output;
+	    }
+		
 		return output;
 	}
 }
